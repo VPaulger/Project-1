@@ -1,0 +1,166 @@
+ <!DOCTYPE html>
+<html>
+<head>
+  <title>Aloha Apparel Co.</title>
+  <link href="./style.css" type="text/css" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+  <!--link rel below for social media icons-->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+  <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+  <script src="jquery-3.3.1.min.js"></script>
+  <script src="./script.js"></script>
+</head>
+
+<body>
+  <header>
+    <div id="mobileDisplay"></div>
+    <img id="alohaLogo" src="./images/aloha-logo.svg" alt="Aloha Logo">
+    <hr>
+    <ul id="navigation">
+      <li><a href="#contentSection">About</a></li>
+      <li><a href="#categorySection">Shop</a></li>
+      <li><a href="#mostLovedProductsSection">Featured</a></li>
+      <li><a href="#subscribeSection">Updates</a></li>
+    </ul>
+    <div id="shoppingCart">
+      <img id="cartIcon" src="./images/cart-icon.svg" alt="Shopping Cart">
+      <div id="updateCart">0</div> 
+    </div>
+    </div>
+  </header>
+  <section id="bannerSection">
+    <div id="bannerBackground">
+      <img id="bannerGirl" src="./images/banner-girl.png" alt="Banner Girl">
+      <div class="backgroundTint"></div>
+      <h2>NEW COLLECTION</h2>
+      <h1>Spring/Summer 2016</h1>
+    </div>
+  </section>
+  <section class="scrollClass" id="contentSection">
+    <h2><span class=playfairItalics>Hand Crafted</span> <span class=playfairBold>Styles</span></h2>
+    <p>Aloha Apparel Co. sells only the finest reary-to-travel clothing. Browse our<br>
+       current selection of products or sign up for updates below.
+    </p>
+  </section>
+  <section id="categorySection">
+    <div class="categoryContainer" id="mensCategory">
+      <div class="backgroundTint"></div>
+      <img src="./images/mens-category.jpg">
+      <h3>MENS</h3>
+    </div>
+    <div class="categoryContainer" id="trendsCategory">
+      <div class="backgroundTint"></div>
+      <h3>TRENDS</h3>
+      <img src="./images/trends-category.jpg">
+    </div>
+    <div class="categoryContainer" id="glassesCategory">
+      <div class="backgroundTint"></div>
+      <h3>GLASSES</h3>
+      <img src="./images/glasses-category.jpg">
+    </div>
+    <div class="categoryContainer" id="saleCategory">
+      <div class="backgroundTint"></div>
+      <h3>SALES</h3>
+      <img src="./images/sale-category.jpg">
+    </div>
+    <div class="categoryContainer" id="bagsCategory">
+      <div class="backgroundTint"></div>
+      <h3>BAGS</h3>
+      <img src="./images/bags-category.jpg">
+    </div>
+    <div class="categoryContainer" id="womensCategory">
+      <div class="backgroundTint"></div>
+      <h3>WOMENS</h3>
+      <img src="./images/womens-category.jpg">
+    </div>
+  </section>
+  <section id="mostLovedProductsSection">
+    <h2><span class=playfairItalics>Most Loved</span> <span class=playfairBold>Products</span></h2>
+    <!-- can add to main carousel for repeated scroll "wrapAround": true-->
+    <div class="main-carousel" data-flickity='{ "cellAlign": "center", "contain": true, "wrapAround": true }'>
+      <div class="carousel-cell">
+        <img src="./images/checked-stretch-dress.jpg">
+        <p class="itemName">DRESSES</p>
+        <h3>Checked Stretch Dress</h3>
+        <p>$129.00</p>
+        <button class="addToCart">Add to Cart</button>
+      </div>
+      <div class="carousel-cell">
+        <img src="./images/blue-hipster-backpack.jpg">
+        <p class="itemName">BAGS</p>
+        <h3>Blue Hipster Backpack</h3>
+        <p>$69.00</p>
+        <button class="addToCart">Add to Cart</button>
+      </div>
+      <div class="carousel-cell">
+        <img src="./images/demin-overall-shorts.jpg">
+        <p class="itemName">DENIM</p>
+        <h3>Denim Overall Shorts</h3>
+        <p>$89.00</p>
+        <button class="addToCart">Add to Cart</button>
+      </div>
+      <div class="carousel-cell">
+        <img src="./images/pink-dotted-dress.jpg">
+        <p class="itemName">DRESSES</p>
+        <h3>Pink Dotted Dress</h3>
+        <p>$99.00</p>
+        <button class="addToCart">Add to Cart</button>
+      </div>
+      <div class="carousel-cell">
+        <img src="./images/stretch-knit-dress.jpg">
+        <p class="itemName">DRESSES</p>
+        <h3>Stretch Knit Dress</h3>
+        <p>$169.00</p>
+        <button class="addToCart">Add to Cart</button>
+      </div>
+      <div class="carousel-cell">
+        <img src="./images/cotton-blue-shirt.jpg">
+        <p class="itemName">SHIRTS</p>
+        <h3>Cotton Blue Shirt</h3>
+        <p>$89.00</p>
+        <button class="addToCart">Add to Cart</button>
+      </div>
+    </div>  
+  </section>
+  <section id="subscribeSection">
+      <div id="subscribeBackground">
+        <h2><span class=playfairItalics>Sign-up for</span> <span class=playfairBold>Updates</span></h2>
+        <h4>Stay updated on our latest product releases, be the first to find out about 
+          <br><br>upcomming sales, and get free style tips from our blog. Unsubscrbe at any time.
+        </h4>
+        <form name="subscribeForm" action="./index.html" method="POST">
+          <input id="subscribeInput" type="text" name="subscribe" placeholder="Your Email">
+          <input id="contactSubmitButton" type="submit" value="Subscribe">
+        </form>
+      </div>
+  </section>
+  <footer>
+    <span id="footerLeft">
+      <p>&copy; 2016 Aloha Apparel Co.</p>
+      <p>Powered by HTML and CSS.</p><br>
+      <p>604-604-6040. <span id="emailUnderline">info@alohaapparel.com</span></p><br>
+      <span id="greyText">
+        <p>1490 W Broaday</p>
+        <p>Vancouver, BC, Canada</p>
+      </span>
+    </span>
+    <span id="footerRight">
+      <div id="socialIcons">
+        <i class="fab fa-facebook-f"></i>
+        <i class="fab fa-twitter"></i>
+        <i class="fab fa-instagram"></i>
+        <i class="fab fa-pinterest"></i>
+        <i class="fab fa-google-plus-g"></i>
+      </div>
+      <div id="socialText">
+        <p>Facebook</p>
+        <p>Twitter</p>
+        <p>Instagram</p>
+        <p>Pinterest</p>
+        <p>Google+</p>
+      </div>
+    </span>
+  </footer>
+</body>
+
+</html> 

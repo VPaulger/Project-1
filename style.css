@@ -1,0 +1,434 @@
+/*collection of fonts*/
+@font-face {
+  font-family: 'PlayfairDisplay-Regular';
+  src: url('./fonts/PlayfairDisplay-Regular.otf');
+}
+
+@font-face {
+  font-family: 'PlayfairDisplay-Italic';
+  src: url('./fonts/PlayfairDisplay-Italic.otf');
+}
+
+@font-face {
+  font-family: 'PlayfairDisplay-Bold';
+  src: url('./fonts/PlayfairDisplay-Bold.otf');
+}
+
+@font-face {
+  font-family: 'Raleway-Light';
+  src: url('./fonts/Raleway-Light.ttf');
+}
+
+@font-face {
+  font-family: 'Raleway-Medium';
+  src: url('./fonts/Raleway-Medium.ttf');
+}
+/*end of font collection*/
+
+body{
+  font-family: 'Raleway-Light';
+  margin :0 auto;
+  background-color: white;
+}
+
+header{
+  height: 100px;
+  width: 100%;
+  background-color: white;
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  z-index: 5;
+}
+
+#alohaLogo{
+  margin: 20px;
+  height: 60px;
+  padding-left: 20px;
+}
+
+#mobileDisplay{
+  display: none;
+  order: 1;
+}
+
+header hr{
+  display: none;
+}
+
+#navigation{
+  display: flex;
+  align-items: center;
+  list-style: none;
+  text-transform: uppercase;
+  padding-left: 0;
+  color: red;
+  transform: translate(-10%);
+  font-size: 14px;
+  font-family: 'Raleway-Medium';
+}
+
+#navigation li{
+  padding: 20px;
+}
+
+#navigation a, a:visited{
+  color:  #e2574c;
+  text-decoration: none;
+}
+
+#shoppingCart{
+  display: flex;
+  position: relative;
+}
+
+#cartIcon{
+  margin: 20px;
+  height: 60px;
+  padding-right: 20px;
+}
+
+#updateCart{
+  height: 25px;
+  width: 25px;
+  background-color:  #e2574c;
+  color: white;
+  position: absolute;
+  left: 50%;
+  top: 15%;
+  border-radius: 50%;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+#bannerSection{
+  padding-top: 100px;
+  width: 100%;
+  display: flex;
+}
+
+#bannerBackground{
+  background-image: url("./images/flower-bkgd.jpg");
+  background-size: cover;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+}
+
+#bannerGirl{
+  padding-top: 100px;
+  max-height: 100%;
+}
+
+.backgroundTint{
+  background-color: rgba(0, 0, 0, 0.25);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.playfairItalics{
+  font-family: 'PlayfairDisplay-Italic';
+}
+
+.playfairBold{
+  font-family: 'PlayfairDisplay-Bold';
+}
+
+#bannerBackground h2{
+  font-family: 'Raleway-Light';
+  position: absolute;
+  top: 30%;
+  color: white;
+  font-size: 1.5em;
+}
+
+#bannerBackground h1{
+  font-family: 'PlayfairDisplay-Regular';
+  font-size: 4em;
+  position: absolute;
+  top: 35%;
+  text-align: center;
+  color: white;
+}
+
+#contentSection{
+  margin-top: 40px;
+  margin-bottom: 50px;
+  display: flex;
+  width: 100%;
+  background-color: white;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#contentSection h2{
+  color: black;
+  font-size: 2em;
+}
+
+#contentSection p{
+  text-align: center;
+  font-size: 16px;
+}
+
+#categorySection{
+  display: grid;
+  grid-gap: 10px;
+}
+
+.categoryContainer{
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#categorySection img{
+  height: 100%;
+  width: 100%;
+}
+
+#categorySection h3{
+  position: absolute;
+  top: 35%;
+  color: white;
+}
+
+#mensCategory {
+  grid-area: 1/1/1/3;
+}
+
+#trendsCategory{
+  grid-area: 1/3;
+}
+
+#glassesCategory{
+  grid-area: 1/4;
+}
+
+#saleCategory{
+  grid-area: 2/1;
+}
+
+#bagsCategory{
+  grid-area: 2/2;
+}
+
+#womensCategory{
+  grid-area: 2/3/2/5;
+}
+
+#mostLovedProductsSection{
+  margin-bottom: 50px;
+  background-color: white;
+}
+
+#mostLovedProductsSection h2{
+  text-align: center;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  font-size: 2em;
+}
+
+.carousel-cell{
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.carousel-cell p, h3, button{
+  margin: 10px;
+}
+
+.carousel-cell h3{
+  color: #e2574c;
+  font-family: 'PlayfairDisplay-Regular';
+  text-align: center;
+}
+
+.itemName{
+  font-size: 14px;
+}
+
+.carousel-cell button{
+  margin-bottom: 20px;
+  border-radius: 16px;
+  background-color: black;
+  color: white;
+  padding: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 10px;
+}
+
+.flickity-prev-next-button{
+  display: none;
+}
+
+#mostLovedProductsSection img{
+  max-width: 100%;
+}
+
+#subscribeSection{
+  background-color: white;
+  overflow: hidden;
+}
+
+#subscribeBackground{
+  background-image: url("./images/wave-bkgd.jpg");
+  background-size: cover;
+  width: 120%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: -45%;
+  margin-left: -10%;
+  padding-bottom: 10%;
+}
+
+#subscribeBackground h2{
+  color: white;
+  position: absolute;
+  margin-top: 15%;
+  font-size: 2em;
+}
+
+#subscribeBackground h4{
+  color: white;
+  position: absolute;
+  margin-top: 24%;
+  text-align: center;
+  font-size: 1em;
+}
+
+form{
+  margin-top: 55%;
+  width: 35%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+#subscribeInput{
+  width: 100%;
+  padding: 16px 20px;
+  border: 1px solid #ccc;
+  border-radius: 24px;
+  box-sizing: border-box;
+  color: grey;
+  font-size: 1em;
+}
+
+#contactSubmitButton{
+  border-radius: 20px;
+  color: white;
+  font-weight: 700;
+  height: 40px;
+  width: 12%;
+  margin-left: 14%;
+  background-color: #e2574c;
+  cursor: pointer;
+  position: absolute;
+  font-size: 1em;
+  font-family: 'Raleway-Light';
+}
+
+footer{
+  color: white;
+  background-color: #242424;
+  display: flex;
+  justify-content: space-between;
+}
+
+#footerLeft{
+  padding: 60px 30px;
+}
+
+#footerLeft p{
+  margin: 5px;
+}
+
+#emailUnderline{
+  text-decoration: underline;
+}
+
+#greyText{
+  color: #969696;
+}
+
+#footerRight{
+  margin-top: 50px;
+  margin-right: 110px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#footerRight i{
+  margin-top: 10px;
+  margin-right: 8px;
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+}
+
+@media only screen and (max-width: 600px) {
+
+  header{
+    height: 150px;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  #mobileDisplay{
+    display: flex;
+    order: 1;
+  }
+
+  #navigation{
+    order: 3;
+    align-self: center;
+  }
+
+  header hr{
+    display: flex;
+    align-self: flex-end;
+    order: 2;
+  }
+
+  #mensCategory {
+    grid-area: 1/1/1/3;
+  }
+  
+  #trendsCategory{
+    grid-area: 2/1;
+  }
+  
+  #glassesCategory{
+    grid-area: 2/2;
+  }
+  
+  #saleCategory{
+    grid-area: 3/1;
+  }
+  
+  #bagsCategory{
+    grid-area: 3/2;
+  }
+  
+  #womensCategory{
+    grid-area: 4/1/4/3;
+  }
+  
+  .carousel-cell{
+    width: 100%;
+  }
+}
