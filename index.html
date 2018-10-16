@@ -2,18 +2,25 @@
 <html>
 <head>
   <title>Aloha Apparel Co.</title>
+  <!--link rel below for css stylesheet-->
   <link href="./style.css" type="text/css" rel="stylesheet">
+  <!--link rel below for flickity plugin-->
   <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
   <!--link rel below for social media icons-->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+  <!--script below for flickity plugin-->
   <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+  <!--script for jQuery plugin-->
   <script src="jquery-3.3.1.min.js"></script>
+  <!--script for javascript-->
   <script src="./script.js"></script>
 </head>
 
+
+<!--beginning body-->
 <body>
+  <!--header section-->
   <header>
-    <div id="mobileDisplay"></div>
     <img id="alohaLogo" src="./images/aloha-logo.svg" alt="Aloha Logo">
     <hr>
     <ul id="navigation">
@@ -26,8 +33,10 @@
       <img id="cartIcon" src="./images/cart-icon.svg" alt="Shopping Cart">
       <div id="updateCart">0</div> 
     </div>
-    </div>
   </header>
+  <!--end of header section-->
+
+  <!--banner section-->
   <section id="bannerSection">
     <div id="bannerBackground">
       <img id="bannerGirl" src="./images/banner-girl.png" alt="Banner Girl">
@@ -36,12 +45,18 @@
       <h1>Spring/Summer 2016</h1>
     </div>
   </section>
+  <!--end of banner section-->
+
+  <!--about section-->
   <section class="scrollClass" id="contentSection">
     <h2><span class=playfairItalics>Hand Crafted</span> <span class=playfairBold>Styles</span></h2>
     <p>Aloha Apparel Co. sells only the finest reary-to-travel clothing. Browse our<br>
        current selection of products or sign up for updates below.
     </p>
   </section>
+  <!--end of about section-->
+
+  <!--shoping category section-->
   <section id="categorySection">
     <div class="categoryContainer" id="mensCategory">
       <div class="backgroundTint"></div>
@@ -74,9 +89,11 @@
       <img src="./images/womens-category.jpg">
     </div>
   </section>
+  <!--end of shopping category section-->
+
+  <!--featured products section-->
   <section id="mostLovedProductsSection">
     <h2><span class=playfairItalics>Most Loved</span> <span class=playfairBold>Products</span></h2>
-    <!-- can add to main carousel for repeated scroll "wrapAround": true-->
     <div class="main-carousel" data-flickity='{ "cellAlign": "center", "contain": true, "wrapAround": true }'>
       <div class="carousel-cell">
         <img src="./images/checked-stretch-dress.jpg">
@@ -122,6 +139,9 @@
       </div>
     </div>  
   </section>
+  <!--end of featured products section-->
+
+  <!--subscribe to updates section-->
   <section id="subscribeSection">
       <div id="subscribeBackground">
         <h2><span class=playfairItalics>Sign-up for</span> <span class=playfairBold>Updates</span></h2>
@@ -134,6 +154,9 @@
         </form>
       </div>
   </section>
+  <!--end of subscribe for updates section-->
+
+  <!--footer section-->
   <footer>
     <span id="footerLeft">
       <p>&copy; 2016 Aloha Apparel Co.</p>
@@ -161,6 +184,9 @@
       </div>
     </span>
   </footer>
+  <!--end of footer sectionn-->
+
 </body>
+<!--end of body-->
 
 </html> 
